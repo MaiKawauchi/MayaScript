@@ -1,0 +1,21 @@
+{
+    global proc currentTimeUnit()
+    {
+        int $dice = `rand 1 6`;
+        switch($dice){
+            case 1:
+            case 2:
+            print ($dice + "Failed.");
+            break;
+            
+            case 5:
+            case 6:
+            print ($dice + "Success");
+            break;
+
+            default:
+            print ($dice + "One more");
+            break;
+        }
+    }
+}
